@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=0.7">
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Paralogism Terminal</title>
-  <link rel="stylesheet" href="terminalcss.css">
-  <script defer src="terminal.js"></script>
-</head> 
+  <link rel="stylesheet" href="css/term.css">
+  <script defer src="js/main.js"></script>
+</head>
 <body>
   <pre id="asciiText">
 ▄▖      ▜     ▘       
@@ -19,7 +19,17 @@
   <div id="prompt">
     <span id="command-input"></span><span id="cursor" class="blink"></span>
   </div>
+
   <div id="interlaced"></div>  
   <div id="glare"></div>
+
+  <!-- hidden input to summon mobile keyboard -->
+  <input
+    id="terminal-input"
+    type="text"
+    autocomplete="off"
+    autocapitalize="off"
+    autocorrect="off"
+  />
 </body>
 </html>
