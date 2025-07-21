@@ -1,129 +1,138 @@
-// Add a specified delay in miliseconds
-const wait = (ms = 0) => new Promise(resolve => setTimeout(resolve, ms))
+// js/main.js
 
-// Write text to a target element with a specified delay in ms
-function writeText(target, content, delay = 5)
-{
-  // Loop through array of content characters
-  return new Promise((resolve) => {
-    // Make an array of the specified content
-    const contentArray = content.split('')
+// Add a specified delay in milliseconds
+const wait = (ms = 0) => new Promise(resolve => setTimeout(resolve, ms));
 
-    // Keep track of the character currently being written
-    let current = 0
-
-    while (current < contentArray.length) {
-      ;((curr) => {
-        setTimeout(() => {
-          target.innerHTML += contentArray[curr]
-          // Scroll to the bottom of the screen unless scroll is false
-          window.scrollTo(0, document.body.scrollHeight)
-          
-          // Resolve the promise once the last character is written
-          if (curr === contentArray.length - 1) resolve()
-        }, delay * curr) // increase delay with each iteration
-      })(current++)
-    }
-  })
+// Write text to a target element with a specified delay per character
+function writeText(target, content, delay = 5) {
+  return new Promise(resolve => {
+    const chars = content.split('');
+    chars.forEach((ch, i) => {
+      setTimeout(() => {
+        target.innerHTML += ch;
+        window.scrollTo(0, document.body.scrollHeight);
+        if (i === chars.length - 1) resolve();
+      }, delay * i);
+    });
+  });
 }
 
-// Handle keypresses on the document, printing them to an
-// 'input' span. Input content will be interpreted as a
-// command and output will be written to an output element
-function handleKeypress(e, input, output)
-{ 
-  // Check if a certain type of element has focus that we do not
-  // want to do keypress handling on (such as form inputs)
-  function noInputHasFocus() {
-    const elements = ['INPUT', 'TEXTAREA', 'BUTTON']
-    return elements.indexOf(document.activeElement.tagName) === -1
+// Handle keystrokes, routing them through your terminal logic
+function handleKeypress(e, inputEl, outputEl) {
+  // Prevent browser actions for Enter/Backspace
+  e.preventDefault();
+
+  // Skip if an actual form input is focused
+  const noInputHasFocus = () => {
+    const tag = document.activeElement.tagName;
+    return !['INPUT', 'TEXTAREA', 'BUTTON'].includes(tag);
+  };
+  if (!noInputHasFocus()) return;
+
+  const key = e.key;
+  // ENTER: execute the command
+  if (key === 'Enter') {
+    const cmd = inputEl.innerText.trim();
+    inputEl.innerHTML = '';
+    outputEl.innerHTML += '<br><strong>' + cmd + '</strong><br>';
+    writeText(outputEl, execute(cmd));
+    return;
   }
-  
-  if (noInputHasFocus) {
-    // Enter clears the input and executes the command
-    if (e.key === 'Enter') {
-      const command = input.innerText
-      input.innerHTML = ''
-      // reprint the entered command
-      output.innerHTML += '<br><strong>' + command + '</strong>\n<br>'
-      writeText(output, execute(command))
-    }
-    // Backspace causes last character to be erased
-    else if (e.key === 'Backspace') {
-      input.innerHTML = input.innerHTML.substring(0, input.innerHTML.length - 1)
-    }
-    // For any other key, print the keystroke to the prompt
-    else input.insertAdjacentText('beforeend', e.key)
+
+  // BACKSPACE: delete last char
+  if (key === 'Backspace') {
+    inputEl.innerHTML = inputEl.innerHTML.slice(0, -1);
+    return;
   }
-  
-  // Accept a command, execute it, and return any output
-  function execute(command)
-  {
-    switch(command.toLowerCase()) {
+
+  // everything else: append the key
+  inputEl.insertAdjacentText('beforeend', key);
+
+  // Your command interpreter
+  function execute(command) {
+    switch (command.toLowerCase()) {
       case '':
-        return `\n`
-
+        return '\n';
       case 'clear':
-        asciiText.style.display = 'block'
-        output.innerHTML = ''
-        return ''
-
+        document.getElementById('asciiText').style.display = 'block';
+        outputEl.innerHTML = '';
+        return '';
       case 'test':
-        return 'Test successful!'
-
+        return 'Test successful!';
       case 'bangsat':
-        return 'Anak kontol!'
-
+        return 'Anak kontol!';
       case 'mepi':
-        return 'ganteng'
-    
+        return 'ganteng';
       case 'jokowi':
-        return 'adili'
-    
+        return 'adili';
       case 'orpr01':
         return `Perkara nonton SORE itu 2 jam dari hidup kalian,
-        ayo berusaha dikit jangan mager.
-        Jangan tipikal  “yahhh lusa keknya masih ada”  
-        jamgan “ nunggu striming aja lah”
-        Film kek SORE itu mutlak ditontob di layar Bioskop, 
-        tapi di sebegitu banyak nya film,
-        dalam 1-2 hari bisa saja tiba tiba ilang dari layar deket loe.
-        Gue jamin nggak nyesel.`
-
+ayo berusaha dikit jangan mager.
+Jangan tipikal “yahhh lusa keknya masih ada”
+jangan “nunggu striming aja lah”
+Film kek SORE itu mutlak ditonton di layar Bioskop,
+tapi di sebegitu banyak nya film,
+dalam 1-2 hari bisa saja tiba tiba ilang dari layar deket loe.
+Gue jamin nggak nyesel.`;
       case 'help':
         return `Enter a command here and something will be output.
-  Accepted commands:
-   help - this help text
-   clear - clear the screen
-   test - display a test message
-   bangsat - just try it`
-
+Accepted commands:
+  help      - this help text
+  clear     - clear the screen
+  test      - display a test message
+  bangsat   - just try it`;
       default:
-        return 'Unknown command'
+        return 'Unknown command';
     }
-  }  
+  }
 }
 
-// Execute page loading asynchronously once content has loaded
+// Initialize on page load
 document.addEventListener('DOMContentLoaded', async () => {
-  const asciiText = document.getElementById('asciiText')
-  // Store the content of asciiText, then empty it
-  const asciiArt = asciiText.innerText
-  asciiText.innerHTML = ''
-  
-  const instructions = document.getElementById('instructions')
-  const prompt = document.getElementById('prompt')
-  const cursor = document.getElementById('cursor')  
-  
-  await wait(1000)
-  await writeText(asciiText, asciiArt)
-  await wait(500)
-  await writeText(instructions, `Welcome to Paralogism Project terminal. 
-    Enter 'help' to see a list of commands.`)
-  prompt.prepend('>')
-  cursor.innerHTML = '_'
-  
-  const input = document.getElementById('command-input')
-  const output = document.getElementById('output')
-  document.addEventListener('keydown', (e) => handleKeypress(e, input, output))
-})
+  // Grab your elements
+  const asciiTextEl   = document.getElementById('asciiText');
+  const instructionsEl= document.getElementById('instructions');
+  const promptEl      = document.getElementById('prompt');
+  const cursorEl      = document.getElementById('cursor');
+  const inputEl       = document.getElementById('command-input');
+  const outputEl      = document.getElementById('output');
+
+  // Hide the ASCII art, store it, then type it out
+  const asciiArt = asciiTextEl.innerText;
+  asciiTextEl.innerHTML = '';
+
+  await wait(1000);
+  await writeText(asciiTextEl, asciiArt);
+  await wait(500);
+  await writeText(instructionsEl,
+    `Welcome to Paralogism Project terminal.
+Enter 'help' to see a list of commands.`
+  );
+
+  // Show the prompt and cursor
+  promptEl.prepend('>');
+  cursorEl.innerHTML = '_';
+
+  // —— Option 2: hidden input for mobile keyboard —— 
+  const hiddenInput = document.getElementById('terminal-input');
+
+  // focus on load
+  hiddenInput.focus();
+
+  // refocus on any tap within the terminal container
+  document.querySelector('.container').addEventListener('touchstart', () => {
+    hiddenInput.focus();
+  });
+
+  // route its keydowns into your handler
+  hiddenInput.addEventListener('keydown', e => {
+    handleKeypress(e, inputEl, outputEl);
+  });
+
+  // keep desktop support as fallback
+  document.addEventListener('keydown', e => {
+    if (document.activeElement !== hiddenInput) {
+      handleKeypress(e, inputEl, outputEl);
+    }
+  });
+});
