@@ -91,7 +91,7 @@ Last Updated: 2025-08-06 23:47:32
 │ SEX: F                                                          │
 │ MEMORIES: ARCHIVED                                              │
 ├─────────────────────────────────────────────────────────────────┤
-│ EVA KIEŚLOWSKA / OR-PR2                                        │
+│ EVA KIEŚLOWSKA / OR-PR2                                         │
 │ STATUS: ACTIVE                                                  │
 │ SEX: F                                                          │
 │ MEMORIES: ARCHIVED                                              │
@@ -141,7 +141,7 @@ Last Updated: 2025-08-06 23:47:32
 │ SEX: M                                                          │
 │ MEMORIES: ARCHIVED                                              │
 ├─────────────────────────────────────────────────────────────────┤
-│ VISENYA BATHSHEVA AL GHUL / OR-PR12                            │
+│ VISENYA BATHSHEVA AL GHUL / OR-PR12                             │
 │ STATUS: ACTIVE                                                  │
 │ SEX: F                                                          │
 │ MEMORIES: ARCHIVED                                              │
@@ -200,15 +200,45 @@ example usage: type 'memoORPR1' in commands`
       case 'jokowi':
         return 'adili'
     
-      case 'orpr01':
-        return `Perkara nonton SORE itu 2 jam dari hidup kalian,
-        ayo berusaha dikit jangan mager.
-        Jangan tipikal  “yahhh lusa keknya masih ada”  
-        jamgan “ nunggu striming aja lah”
-        Film kek SORE itu mutlak ditontob di layar Bioskop, 
-        tapi di sebegitu banyak nya film,
-        dalam 1-2 hari bisa saja tiba tiba ilang dari layar deket loe.
-        Gue jamin nggak nyesel.`
+      case 'memoorpr12':
+        return `Seven years ago, I held my baby daughter for the first time after she was born, 
+and during my pregnancy I had done everything on my own because I was truly alone, 
+but when she came into the world it felt like I had finally gained someone who could warm my whole life, 
+my baby, and I was no longer alone because I was whole. 
+But that memory keeps shifting like water through my fingers, 
+and sometimes when I try to hold onto it I feel something else underneath, 
+something cold and wet and terrible that makes my chest tight with a fear I cannot name.
+
+The truth seeps in slowly at first, like water through a crack in the wall, 
+and I remember now that it was not a hospital room where I held her but somewhere else entirely, 
+somewhere dark and echoing with sounds that were not the gentle hum of machines 
+but something sharper, more urgent. I was not alone because I had chosen to be alone 
+but because everyone else was gone, had been gone for months by then, 
+and the city outside was not the city I remembered but something broken and burning and wrong.
+
+She was perfect when she was born, my daughter, with her tiny fingers and her dark eyes 
+that looked at me like I was everything, like I was her whole universe, 
+and maybe that is why my mind wanted to remember only that moment, 
+only that perfect moment before everything else happened. 
+Before I realized that the world she had been born into was not a world at all but the ending of one, 
+and that every breath she took was borrowed time, 
+and that every step we took together was leading us closer to a choice no mother should ever have to make.
+
+I remember the water now, how it was so cold it felt like knives against my skin, 
+and how she started to cry when it reached us, when it soaked through the blankets I had wrapped around her, 
+and how her cry echoed off the broken concrete and twisted metal like a siren in the darkness. 
+Her crying would kill us all, would bring them down on us like wolves, 
+would end not just her life and mine but the lives of everyone who had trusted me to keep her quiet, 
+to keep her safe, to somehow make this impossible thing possible.
+
+The silence came so suddenly after that, like a door closing, like a light going out, 
+and I remember how everyone started breathing again, how we made it across, 
+how we survived that night and the next day and all the days that followed. 
+But I also remember the small grave we dug when the sun came up, 
+and how my arms felt so empty afterward, and how I kept walking anyway because that is what you do, 
+you keep walking, even when there is nothing left to walk toward, 
+even when the only thing behind you is a river that took everything you ever loved 
+and gave you nothing back but the terrible gift of staying alive.`
 
       case 'help':
         return `I've seen that you have come back here.
