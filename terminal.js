@@ -211,7 +211,8 @@ example usage: type 'memoORPR1' in commands`
         Gue jamin nggak nyesel.`
 
       case 'help':
-        return `Remember the melodies you used to hum.
+        return `I've seen that you have come back here.
+        Remember the melodies you used to hum.
         There are firsts in everything.
         Remember the crickets who used to sing with you on quiet nights. 
         Except that there are no crickets in Portland Pines.`
