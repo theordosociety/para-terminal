@@ -70,12 +70,132 @@ function handleKeypress(e, input, output)
 
       case 'test':
         return 'Test successful!'
-
-      case 'bangsat':
-        return 'Anak kontol!'
-
+        
       case 'mepi':
         return 'ganteng'
+
+        case 'list':
+        return `NEURAL ARCHIVE SYSTEM v2.1.7
+Authentication: GRANTED
+Administrator Access: ENABLED
+
+> list
+
+ARCHIVED SUBJECTS - OPERATION REQUIEM
+Total Records: 16
+Last Updated: 2025-08-06 23:47:32
+
+┌─────────────────────────────────────────────────────────────────┐
+│ JOAQUINA ROY / OR-PR1                                           │
+│ STATUS: ACTIVE                                                  │
+│ SEX: F                                                          │
+│ MEMORIES: ARCHIVED                                              │
+├─────────────────────────────────────────────────────────────────┤
+│ EVA KIEŚLOWSKA / OR-PR2                                        │
+│ STATUS: ACTIVE                                                  │
+│ SEX: F                                                          │
+│ MEMORIES: ARCHIVED                                              │
+├─────────────────────────────────────────────────────────────────┤
+│ VICTORIA JAKAYLA CHASE / OR-PR3                                 │
+│ STATUS: ACTIVE                                                  │
+│ SEX: F                                                          │
+│ MEMORIES: ARCHIVED                                              │
+├─────────────────────────────────────────────────────────────────┤
+│ MIHAEL KUROSAWA / OR-PR4                                        │
+│ STATUS: ACTIVE                                                  │
+│ SEX: M                                                          │
+│ MEMORIES: ARCHIVED                                              │
+├─────────────────────────────────────────────────────────────────┤
+│ JACINDA JUDE / OR-PR5                                           │
+│ STATUS: ACTIVE                                                  │
+│ SEX: F                                                          │
+│ MEMORIES: ARCHIVED                                              │
+├─────────────────────────────────────────────────────────────────┤
+│ IGRIS SALAZAR-LEE / OR-PR6                                      │
+│ STATUS: ACTIVE                                                  │
+│ SEX: M                                                          │
+│ MEMORIES: ARCHIVED                                              │
+├─────────────────────────────────────────────────────────────────┤
+│ TAMARA WEI / OR-PR7                                             │
+│ STATUS: ACTIVE                                                  │
+│ SEX: F                                                          │
+│ MEMORIES: ARCHIVED                                              │
+├─────────────────────────────────────────────────────────────────┤
+│ HELGE DOPPLER / OR-PR8                                          │
+│ STATUS: ACTIVE                                                  │
+│ SEX: M                                                          │
+│ MEMORIES: ARCHIVED                                              │
+├─────────────────────────────────────────────────────────────────┤
+│ DEVARA KEENAN LEIGHTON / OR-PR9                                 │
+│ STATUS: ACTIVE                                                  │
+│ SEX: M                                                          │
+│ MEMORIES: ARCHIVED                                              │
+├─────────────────────────────────────────────────────────────────┤
+│ HALSTAIRE ERNEST YAN / OR-PR10                                  │
+│ STATUS: ACTIVE                                                  │
+│ SEX: M                                                          │
+│ MEMORIES: ARCHIVED                                              │
+├─────────────────────────────────────────────────────────────────┤
+│ JEREMY VANE / OR-PR11                                           │
+│ STATUS: ACTIVE                                                  │
+│ SEX: M                                                          │
+│ MEMORIES: ARCHIVED                                              │
+├─────────────────────────────────────────────────────────────────┤
+│ VISENYA BATHSHEVA AL GHUL / OR-PR12                            │
+│ STATUS: ACTIVE                                                  │
+│ SEX: F                                                          │
+│ MEMORIES: ARCHIVED                                              │
+├─────────────────────────────────────────────────────────────────┤
+│ ADAM / OR-PR13                                                  │
+│ STATUS: ACTIVE                                                  │
+│ SEX: M                                                          │
+│ MEMORIES: OBSERVED                                              │
+├─────────────────────────────────────────────────────────────────┤
+│ LUKE DAVIS / OR-PR14                                            │
+│ STATUS: ACTIVE                                                  │
+│ SEX: M                                                          │
+│ MEMORIES: ARCHIVED                                              │
+├─────────────────────────────────────────────────────────────────┤
+│ NICHOLAS RYDER / OR-PR15                                        │
+│ STATUS: ACTIVE                                                  │
+│ SEX: M                                                          │
+│ MEMORIES: ARCHIVED                                              │
+├─────────────────────────────────────────────────────────────────┤
+│ PIPER POTTS / OR-PR16                                           │
+│ STATUS: ACTIVE                                                  │
+│ SEX: F                                                          │
+│ MEMORIES: ARCHIVED                                              │
+└─────────────────────────────────────────────────────────────────┘
+
+Use 'memo[CODE]' to access memory archives`
+
+        case 'memo':
+        return `NEURAL ARCHIVE SYSTEM v2.1.7
+Authentication: GRANTED
+Status: ARCHIVED
+
+MEMO - Memory Archive Access Tool
+Usage: memo--
+
+Options:
+--ORPR1: Joaquina Roy
+--ORPR2: Eva Kieślowska
+--ORPR3: Victoria Jakayla Chase
+--ORPR4: Mihael Kurosawa
+--ORPR5: Jacinda Jude
+--ORPR6: Igris Salazar-Lee
+--ORPR7: Tamara Wei
+--ORPR8: Helge Doppler
+--ORPR9: Devara Keenan Leighton
+--ORPR10: Halstaire Ernest Yan
+--ORPR11: Jeremy Vane
+--ORPR12: Visenya Bathsheva Al Ghul
+--ORPR13: Adam
+--ORPR14: Luke Davis
+--ORPR15: Nicholas Ryder
+--ORPR16: Piper Potts
+
+example usage: type 'memoORPR1' in commands`
     
       case 'jokowi':
         return 'adili'
@@ -91,12 +211,10 @@ function handleKeypress(e, input, output)
         Gue jamin nggak nyesel.`
 
       case 'help':
-        return `Enter a command here and something will be output.
-  Accepted commands:
-   help - this help text
-   clear - clear the screen
-   test - display a test message
-   bangsat - just try it`
+        return `Remember the melodies you used to hum.
+        There are firsts in everything.
+        Remember the crickets who used to sing with you on quiet nights. 
+        Except that there are no crickets in Portland Pines.`
 
       default:
         return 'Unknown command'
