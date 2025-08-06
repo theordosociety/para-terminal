@@ -203,8 +203,9 @@ example usage: type 'memoORPR1' in commands`
       case 'memoorpr12':
         return `Seven years ago, I held my baby daughter for the first time after she was born, 
 and during my pregnancy I had done everything on my own because I was truly alone, 
-but when she came into the world it felt like I had finally gained someone who could warm my whole life, 
-my baby, and I was no longer alone because I was whole. 
+but when she came into the world it felt like I had finally gained someone 
+who could warm my whole life, my baby, 
+and I was no longer alone because I was whole. 
 But that memory keeps shifting like water through my fingers, 
 and sometimes when I try to hold onto it I feel something else underneath, 
 something cold and wet and terrible that makes my chest tight with a fear I cannot name.
@@ -220,22 +221,28 @@ She was perfect when she was born, my daughter, with her tiny fingers and her da
 that looked at me like I was everything, like I was her whole universe, 
 and maybe that is why my mind wanted to remember only that moment, 
 only that perfect moment before everything else happened. 
-Before I realized that the world she had been born into was not a world at all but the ending of one, 
+Before I realized that the world she had been born into was not a world at all 
+but the ending of one, 
 and that every breath she took was borrowed time, 
-and that every step we took together was leading us closer to a choice no mother should ever have to make.
+and that every step we took together was leading us closer to a choice 
+no mother should ever have to make.
 
 I remember the water now, how it was so cold it felt like knives against my skin, 
-and how she started to cry when it reached us, when it soaked through the blankets I had wrapped around her, 
-and how her cry echoed off the broken concrete and twisted metal like a siren in the darkness. 
+and how she started to cry when it reached us, when it soaked through 
+the blankets I had wrapped around her, 
+and how her cry echoed off the broken concrete 
+and twisted metal like a siren in the darkness. 
 Her crying would kill us all, would bring them down on us like wolves, 
-would end not just her life and mine but the lives of everyone who had trusted me to keep her quiet, 
+would end not just her life and mine 
+but the lives of everyone who had trusted me to keep her quiet, 
 to keep her safe, to somehow make this impossible thing possible.
 
 The silence came so suddenly after that, like a door closing, like a light going out, 
 and I remember how everyone started breathing again, how we made it across, 
 how we survived that night and the next day and all the days that followed. 
 But I also remember the small grave we dug when the sun came up, 
-and how my arms felt so empty afterward, and how I kept walking anyway because that is what you do, 
+and how my arms felt so empty afterward, 
+and how I kept walking anyway because that is what you do, 
 you keep walking, even when there is nothing left to walk toward, 
 even when the only thing behind you is a river that took everything you ever loved 
 and gave you nothing back but the terrible gift of staying alive.`
