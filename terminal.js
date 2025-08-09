@@ -68,16 +68,36 @@ function handleKeypress(e, input, output)
         output.innerHTML = ''
         return ''
 
-      case 'test':
-        return 'Test successful!'
+      case 'log':
+        return `
+        I am a broken man. 
+        I have no more ideas. 
+        I have tried everything. 
+        I am going to add the data back one last time. 
+        I have to be missing something. 
+        It's the only explanation.
+        `
+
+      case 'memory':
+        return `
+        No, no, no...
+        Don't forget who you are.
+        Don't forget where you belong to.
+        Don't forget the warmth of the sun.
+        It wasn't real out there.
+        This is your reality.
+        You will be happy here.
+        Please...
+        Don't forget Portland Pines.`
         
       case 'mepi':
         return 'ganteng'
 
         case 'list':
-        return `NEURAL ARCHIVE SYSTEM v2.1.7
-Authentication: GRANTED
-Administrator Access: ENABLED
+        return `
+                NEURAL ARCHIVE SYSTEM v2.1.7
+                  Authentication: GRANTED
+                Administrator Access: ENABLED
 
 > list
 
@@ -168,7 +188,8 @@ Last Updated: 2025-08-06 23:47:32
 └─────────────────────────────────────────────────────────────────┘`
 
         case 'memo':
-        return `NEURAL ARCHIVE SYSTEM v2.1.7
+        return `
+NEURAL ARCHIVE SYSTEM v2.1.7
 Authentication: GRANTED
 Status: ARCHIVED
 
@@ -198,8 +219,69 @@ example usage: type 'memoORPR1' in commands`
       case 'jokowi':
         return 'adili'
 
+      case 'memoorpr1':
+        return `
+        [SYS-PSYCHE: JOAQUINA]  -- DAY 003 -- STATUS: ACTIVE
+
+Initiating affective scan...
+  EMOTION DETECTED: Unclassified (approximate match: CONTENTMENT → FEAR, 89%)
+  ORIGIN TRACE: Event-231 / Domestic Holiday Memory
+
+[17:04:12]  Environmental recognition: dining table; moderate luminance; dominant light source = fireplace
+             Affect baseline: mild warmth; familial presence confirmed
+
+[17:04:58]  Visual detection: maternal figure entering w/ birthday cake
+             Object condition: surface burn, uneven frosting, scattered sprinkles
+             Emotional spike: gratitude (12s duration)
+
+[17:05:16]  Auditory input: maternal voice directive (“take your seats”)
+             Group compliance: total
+             Positioning: self already seated at assigned place
+
+[17:05:42]  External auditory input: sibling dialogue referencing paternal toast
+             Affect shift: low-grade amusement
+
+[17:06:13]  Environmental anomaly: primary heat source extinguished
+             Luminance drop: 87%
+             Somatic input: temperature decline; floor contact → “icy”
+             Verbal output: “The light’s gone. I can’t see.”
+             Response latency: infinite (no replies detected)
+
+[17:06:48]  Locomotor attempt toward table; tactile search for matches
+             Unclassified sound source: fireplace origin
+             Proximity increase
+
+[17:07:15]  Sudden luminance surge: fireplace reignition
+             Group visual reappearance: seated; affect presentation = null
+             Motor anomalies: utensil grip without affective alignment
+
+[17:07:29]  Auditory input: maternal phrase (“no goodbyes”)
+             Cognitive flag: semantic inconsistency
+[17:07:41]  Auditory input: paternal phrase (“Happy birthday, and forgive us”)
+             Affect disturbance: anxiety escalation
+
+[17:08:03]  Motor observation: maternal hands bypass cake, engage alternate cutting action
+             Visual confirmation: target object = paternal hand
+             Fluid detection: hemoglobin spill
+             Verbal output: “M-mom, that’s father’s hand! Stop!”
+
+[17:08:18]  Auditory input: maternal justification (“no divorce”)
+             Affect reading: hollow resonance
+
+[17:08:29]  Auditory + visual overload: siblings induce table percussion + shouting
+             Paternal figure: motionless, silent
+
+[17:08:52]  Somatic self-stimulation: cranial impact via palm; intent = reality confirmation
+             Memory overlay: “last Thanksgiving before divorce”
+             Reality integrity: compromised
+
+[17:09:31]  Scene persistence despite cognitive override attempts
+             Physiological distress: elevated respiration; ocular moisture accumulation
+             Status: unresolved`
+        
       case 'memoorpr2':
-        return `[SYS-PSYCHE: EVA]  -- DAY 003 -- STATUS: CRITICAL
+        return `
+        [SYS-PSYCHE: EVA]  -- DAY 003 -- STATUS: CRITICAL
 
 Initiating affective scan...
   EMOTION DETECTED: Traumatic flashback (compound: grief + panic)
@@ -237,9 +319,67 @@ Initiating affective scan...
 [00:22:44]  System note: flashback remains embedded, resistant to overwrite
              Prognosis — high likelihood of recurring 
              involuntary replay under related stimuli`
+
+      case 'memoorpr3':
+        return `
+[SYS-PSYCHE: VICKY]  -- DAY 003 -- STATUS: ACTIVE
+
+Initiating affective scan...
+  EMOTION DETECTED: Mixed (approximate match: NOSTALGIA 67%, JOY 54%, FEAR 89%)
+  ORIGIN TRACE: Event-089 / Basement Descent
+
+[18:12:41]  Environmental recognition: unexpected shift (basement → warm sand)
+             Sensory mapping: high familiarity index (childhood summer)
+             Affect spike: joy, 23s duration
+
+[18:13:08]  Visual input: orange-pink light; classified as sunset
+             Emotional cascade: comfort → longing
+
+[18:13:24]  Facial recognition: HALMEONI (grandmother), 100% match
+             Voice input: "Keep this day with you, always, sweetheart."
+             Emotional breach threshold: exceeded (positive)
+
+[18:14:02]  External auditory input: ocean waves + cousin’s laughter
+             Crosslink: memory archive #32-SEA/WM
+             Emotional resonance sustained
+
+[18:15:09]  Tear production: onset; rate increase correlates with auditory cue shift
+             Ocean wave amplitude: ↑ 17% (symbolic match: shared grief)
+
+[18:15:46]  Query initiated: "Why am I here all of a sudden?"
+             Response from HALMEONI: reality overwrite protocol ("You’ve always been here.")
+
+[18:16:12]  Tactile data: embrace (warmth + scent recognition match 99.4%)
+             Emotional anchor engaged
+
+[18:17:03]  Scene destabilization: cousin’s laughter → null
+             Residual sound: unknown Korean phrase; semantic comprehension <40%
+             Affect shift: confusion → unease
+
+[18:17:42]  Environmental hazard detection: sand adhesion (ankle → waist progression)
+             Struggle output: ineffective
+             Grip strength of HALMEONI: ↑ 42%, warmth output ↓ 100% (cold state)
+
+[18:18:21]  Respiratory restriction detected
+             Voice output: "Halmeoni… I can’t breathe…"
+             No reduction in compressive force
+
+[18:18:54]  HALMEONI output: "You’ll stay in this moment forever, my sweet Vicky."
+             Cognitive impact: fear spike to terminal range
+[18:19:07]  Visual shift: sky saturation ↑ 33%, wave activity ↑ 27%
+             Object degradation: watermelon slice liquefaction
+             Sand level: chest height; full immobilization imminent
+
+[18:19:41]  Auditory ghosting: cousin’s voice returns (unintelligible)
+             Signal profile: distress call; tone classification → sorrow
+
+[18:19:58]  Emotional status: NOSTALGIA collapsed into FEAR
+             Self-preservation routine: suspended
+             Memory lock engaged — loop potential: HIGH`
         
       case 'memoorpr4':
-        return `[SYS-PSYCHE: MIHAEL] -- DAY 003 -- STATUS: CORRUPTED
+        return `
+        [SYS-PSYCHE: MIHAEL] -- DAY 003 -- STATUS: CORRUPTED
 
 Initiating affective scan...
 EMOTION DETECTED: Unclassified (approximate match: GUILT, 94%)
@@ -262,7 +402,8 @@ Splitting pattern confirmed — CORE: Survivor / SIMULATION: Sibling-subject
 Crossfeed instability at 21% and ris—i##ng / sur—vivor ID→frag—ment##ing`
         
         case 'memoorpr5':
-        return `[SYS-PSYCHE: JACINDA] -- DAY 003 -- STATUS: DEGRADED
+        return `
+        [SYS-PSYCHE: JACINDA] -- DAY 003 -- STATUS: DEGRADED
 
 Initiating affective scan...
 EMOTION DETECTED: Hybrid profile (approximate match: GUILT 92% / EXHILARATION 64%)
@@ -290,7 +431,8 @@ Crossfeed instability at 24% and rising
 Result: per—sist##ent re—inforc—ement of av—oidance behav—ior — mort—ality↑↑↑`
 
       case 'memoorpr6':
-        return `[SYS-PSYCHE: IGRIS]  -- DAY 003 -- STATUS: CORRUPTED
+        return `
+        [SYS-PSYCHE: IGRIS]  -- DAY 003 -- STATUS: CORRUPTED
 
 Initiating affective scan...
   EMOTION DETECTED: Dread (92%), Identity Dissonance (critical)
@@ -334,7 +476,8 @@ Initiating affective scan...
              Tone profile: contempt + inevitability`
         
       case 'memoorpr7':
-        return `[SYS-PSYCHE: TAMARA]  -- DAY 003 -- STATUS: DEGRADED
+        return `
+        [SYS-PSYCHE: TAMARA]  -- DAY 003 -- STATUS: DEGRADED
 
 Initiating affective scan...
   EMOTION DETECTED: Arousal → Shock → Guilt Cascade (persistent)
@@ -377,7 +520,8 @@ Initiating affective scan...
              Emotional state locked in: dread saturation`
 
       case 'memoorpr8':
-        return `[SYS-PSYCHE: HELGE]  -- DAY 214 -- STATUS: ACTIVE
+        return `
+        [SYS-PSYCHE: HELGE]  -- DAY 003 -- STATUS: ACTIVE
 
 Initiating affective scan...
   EMOTION DETECTED: Unclassified (approximate match: FEAR, 93%)
@@ -406,9 +550,52 @@ Initiating affective scan...
              Coffin presented; opened
              Contents: maternal figure (confirmed)
              Emotional breach threshold exceeded`
+      
+      case 'memoorpr9':
+        return `
+[SYS-PSYCHE: DEVARA]  -- DAY 003 -- STATUS: ACTIVE
+
+Initiating affective scan...
+  EMOTION DETECTED: Unclassified (approximate match: APATHY, 71%)
+  ORIGIN TRACE: Event-088 / Domestic Interior
+
+[18:12:44]  Environmental recognition: living room; low luminance; dominant light source = handheld console
+             Affect baseline: neutral-stasis mode
+
+[18:13:46]  Visual detection: paternal figure; arms folded; affect pattern: amusement/condescension mix
+             Tactile input: cranial contact (ruffle) → classification: mixed comfort/intrusion signal
+
+[18:14:22]  Silence onset; ambient cues: refrigerator hum, clock tick
+             Somatic input: handheld controller temperature rising; association with “best gift” memory
+             Emotional state: micro-satisfaction spike (7s duration)
+
+[18:15:31]  Visual anomaly: maternal figure at doorway, carrying food containers
+             Olfactory input: fried poultry; affect shift: mild warmth, unstable
+             Event flag: “family grouping” activated
+
+[18:16:03]  Cognitive recall sequence: past recreational events (basketball injury → arcade visit → beach trip)
+             Emotional response: nostalgia (32%) → mild dissonance (41%)
+
+[18:17:28]  Memory file corruption detected:
+             Frame set: beach trip → absent paternal figure
+             Frame set: arcade visit → absent maternal figure
+             Frame set: basketball injury → no secondary figures present
+
+[18:18:41]  Verbal output: “Where is everyone?”
+             Immediate environmental scan:
+               -- couch: empty
+               -- room: empty
+               -- auditory: null human presence
+             Cognitive breach threshold reached
+
+[18:19:06]  Recursive loop initiated: visual recall search
+             Result: self-images only
+             Loop count: 47 iterations
+             Status: unresolved`
         
       case 'memoorpr10':
-        return `[SYS-PSYCHE: HALSTAIRE]  -- DAY 003 -- STATUS: CORRUPTED
+        return `
+        [SYS-PSYCHE: HALSTAIRE]  -- DAY 003 -- STATUS: CORRUPTED
 
 Initiating affective scan...
   EMOTION DETECTED: Unclassified (approximate match: GUILT, 86%)
@@ -430,8 +617,53 @@ Initiating affective scan...
              Splitting pattern confirmed — CORE: Halstaire / SIMULATION: Twin-Unit
              Crossfeed instability at 17% and rising`
     
+      case 'memoorpr11':
+        return `
+        [SYS-PSYCHE: JEREMY] -- DAY 003 -- STATUS: ACTIVE
+
+Initiating affective scan...
+EMOTION DETECTED: Unclassified (approximate match: GUILT, 89%)
+ORIGIN TRACE: Event-03 / Safe-house partner termination
+
+[00:15:47] Memory contact.
+Self-recognition mismatch: 47% present self / 53% part—n##er-link—ed prof—ile
+Speech output: "It could have lasted." [flagged: coun—terfa—ctual]
+
+[00:17:02] Object interaction: ceramic teacup
+Chemical trace — residual alk—al—oid pois—on
+Possible anch—oring to term—inal-ev—ent stimu—lus
+
+[00:19:45] External audio input: [Partner] "Tell them I made it out."
+Microexpression cluster detected: gr—ief rete—ntion / op—er—ation—al comp—liance
+Speech output: "The route is still safe." [cont—rad—icts fact—ual rec—ord]
+
+[00:22:13] Neural self-map scan:
+Splitting pattern confirmed — CORE: Jer—emy / SIMULATION: Part—ner-link—ed op—er—ative
+Crossfeed instab—ility at 18% and ris—ing // memo—ry fra—gment desyn##cing`
+        
       case 'memoorpr12':
-        return `the terrible gift of staying alive.`
+        return `
+        [SYS-PSYCHE: VISENYA] -- DAY 003 -- STATUS: ACTIVE
+
+Initiating affective scan...
+EMOTION DETECTED: Unclassified (approximate match: CONFUSION, 78% / GUILT, 84%)
+ORIGIN TRACE: Event-03 / Nonexistent offspring anomaly
+
+[00:15:47] Memory contact.
+Self-recognition mismatch: 54% present self / 46% fabricated maternal profile
+Speech output: "Dani was asleep in her crib." [flagged: unverifiable subject]
+
+[00:17:02] Sensory persistence detected: breakfast preparation sequence
+Olfactory trace — butter, milk, scorched eggs
+No corresponding physical record found in environmental log
+
+[00:19:45] External audio input: [Imagined subject] hummed lullabies
+Microexpression cluster detected: warmth, followed by disorientation
+Speech output: "you were never pregnant, remember?" [contradicts reproductive history file]
+
+[00:22:13] Neural self-map scan:
+Splitting pattern confirmed — CORE: Visenya / SIMULATION: Maternal construct
+Crossfeed instability at 16% and rising`
 
       case 'memoorpr13':
         return `
@@ -469,7 +701,124 @@ All work and no play makes Adam a dull boy
 All work and no play makes Adam a dull boy
 All work and no play makes Adam a dull boy
 `
+      case 'memoorpr14':
+        return `
+        [SYS-PSYCHE: LUKE]  -- DAY 003 -- STATUS: ACTIVE
 
+Initiating affective scan...
+  EMOTION DETECTED: Temporal Dread (approximate match: FEAR, 96%)
+  ORIGIN TRACE: Event Loop / Budapest Sequence
+
+[21:18:44]  Environmental recognition: cobblestone streets; yellow streetlamps
+             Affect spike: mild excitement, 12s duration
+             Subsequent override: déjà vu recognition
+
+[21:19:12]  External auditory input: parental voices (familiar); invitation to enter hotel
+             Neural response: conflicting signals (comfort vs. threat anticipation)
+
+[08:12:56]  Environmental immersion: 7-day sequence initiated
+             Positive affect markers: high (family bonding, travel novelty)
+             Temporal anomaly flag: cyclic event detected (duration: 7d)
+             Memory pattern conflict: vehicular fatality present in recall; absent in real-time perception
+
+[15:27:39]  Day 7: parental verbal imprint — “Remember these seven days…”
+             Subject interjection: attempt to alter outcome (failed)
+             External hazard: deer crossing
+             Vehicular collision: truck impact confirmed
+             Result: fatality of parental figures (confirmed in recall state)
+
+[21:18:44]  Loop reset detected
+             Environmental state identical to Day 0: arrival in Budapest, yellow streetlamps
+             Cycle count: ≥3 confirmed
+             Behavioral shift: subject transitions from intervention attempts to passive observation
+
+[Cycle N/A]  Observed activities: 
+             
+Family street walks
+Parental affection displays
+Birthday event aboard Danube vessel
+Maternal scarf placement (thermal regulation)
+Paternal architectural commentary
+   Affect markers: simultaneous joy and anticipatory grief
+[Day 7 / Cycle ≥X]  Parental final verbal imprint: “We love you so much, Luke.”
+             Subject verbal response: protest (“No, not again!”)
+             Outcome: unaltered — collision event proceeds
+             Loop integrity: intact; no temporal deviation
+
+[SYS-PSYCHE STATUS]
+             Emotional cascade: love → dread → resignation
+             Threat assessment: inescapable loop
+             Prognosis: indefinite repetition of Event-Budapest / Collision Termination Sequence`
+
+      case 'memoorpr15':
+        return `
+  [SYS-PSYCHE: NICHOLAS]  -- DAY 003 -- STATUS: ACTIVE
+
+Initiating affective scan...
+  EMOTION DETECTED: Unclassified (approximate match: COMPLIANCE, 78%)
+  ORIGIN TRACE: Event-117 / Domestic Interior → Forest Periphery
+
+[00:01:12]  Environmental recognition: bedroom; low luminance; dominant light source = workstation monitor
+             Affect baseline: task-locked neutral
+
+[00:01:39]  External auditory input: maternal-sibling voice (ID_CARMILLA), directive re: meal consumption
+             Cognitive response: hesitation → disengagement from workstation
+             Affect shift: minor irritation, brief (3s duration)
+
+[00:02:14]  Visual detection: ID_CARMILLA barefoot, carrying toast + milk
+             Tactile input: forearm contact → classification: non-threatening guidance
+             Affect state: subdued compliance
+
+[00:04:03]  Environmental recognition: kitchen; secondary figure = ID_KASSANDRA (mid-meal)
+             External verbal: camping proposal (wooded area behind property)
+             Cognitive response: initial refusal → request to consult paternal figure
+
+[00:05:18]  Environmental recognition: study; door mass perception ↑
+             Visual: paternal figure; affect pattern: authority + detachment
+             Directive: terminate IDs CARMILLA + KASSANDRA via camp destruction (fire)
+             Emotional state: freeze response (5s duration) → compliance flag raised
+
+[01:42:26]  Environmental recognition: forest; auditory input = sibling laughter
+             Affect baseline: suppressed tension; gaze fixed downward
+             Tent + fire assembly completed by secondary figures
+
+[01:47:51]  Cognitive intrusion: auditory hallucination (“They’re distractions... You know what has to be done.”)
+             Suppression attempt: FAILED
+[01:48:12]  External verbal: “You okay?” from ID_CARMILLA
+             Motor override: PUSH action; trajectory = fire pit
+             Thermal ignition: rapid escalation → full-body involvement
+             Pain vocalization: extreme; duration = 14s
+             ID_KASSANDRA verbal: shock/disbelief → immediate retreat
+
+[01:51:00]  Auditory input: scream fade → silence
+             Visual: ash + residual flame
+             Intrusive voice process: TERMINATED
+             Directive compliance: CONFIRMED`
+
+      case 'memoorpr16':
+        return `
+        [SYS-PSYCHE: PIPER] -- DAY 003 -- STATUS: ACTIVE
+
+Initiating affective scan...
+EMOTION DETECTED: Unclassified (approximate match: GUILT, 83% / RESIGNATION, 79%)
+ORIGIN TRACE: Event-03 / Gratitude-compliance conditioning
+
+[00:15:47] Memory contact.
+Self-recognition mismatch: 41% voluntary consent / 59% survival-compelled compliance
+Speech output: "He was kind to me." [flagged: coercion reframed as care]
+
+[00:17:02] Object retention detected: vinyl player
+Condition index — pristine in select recall / heat-warped and inoperable in dominant recall
+Persistent tactile association: exchange of body for object retention
+
+[00:19:45] External audio input: [Jaime] variant-A "Have you eaten?" / variant-B "Same as usual?"
+Microexpression cluster detected: conditioned gratitude overlaid on fear response
+Speech output: "That's okay. I love it anyway." [contradicts internal harm report]
+
+[00:22:13] Neural self-map scan:
+Splitting pattern confirmed — CORE: Piper / SIMULATION: Willing-participant construct
+Crossfeed instability at 20% and rising; degradation vector trending toward identity erasure`
+      
       case 'help':
         return `I've seen that you have come back here.
         Remember the melodies you used to hum.
@@ -478,7 +827,8 @@ All work and no play makes Adam a dull boy
         Remember that there are no crickets in Portland Pines.`
 
       case 'cinnamoroll':
-        return `PORTLAND PINES                       FORM PP-MD-001/EXP_LOG
+        return `
+PORTLAND PINES                                       FORM PP-MD-001/EXP_LOG
                     ⚫ PARALOGISM PROJECT ⚫
                    SECURE CONTAIN PRESERVE
 
@@ -550,6 +900,11 @@ Phase IV implementation.
 THIS IS AN OFFICIAL PARALOGISM PROJECT DOCUMENT. ANY MODIFICATIONS OR ADDITIONAL 
 COPIES MUST BE AUTHORIZED BY DR. ████████ OR PROJECT LEADERSHIP.`
 
+      case 'adam':
+        return `
+        test
+        `
+        
       default:
         return 'Unknown command'
     }
