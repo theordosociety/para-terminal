@@ -231,7 +231,7 @@ Initiating affective scan...
         Remember the crickets who used to sing with you on quiet nights. 
         Remember that there are no crickets in Portland Pines.`
 
-      case 'adam':
+      case 'cinnamoroll':
         return `PORTLAND PINES                       FORM PP-MD-001/EXP_LOG
                     ⚫ PARALOGISM PROJECT ⚫
                    SECURE CONTAIN PRESERVE
