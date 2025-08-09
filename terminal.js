@@ -165,9 +165,7 @@ Last Updated: 2025-08-06 23:47:32
 │ STATUS: ACTIVE                                                  │
 │ SEX: F                                                          │
 │ MEMORIES: ARCHIVED                                              │
-└─────────────────────────────────────────────────────────────────┘
-
-Use 'memo[CODE]' to access memory archives`
+└─────────────────────────────────────────────────────────────────┘`
 
         case 'memo':
         return `NEURAL ARCHIVE SYSTEM v2.1.7
@@ -201,58 +199,87 @@ example usage: type 'memoORPR1' in commands`
         return 'adili'
     
       case 'memoorpr12':
-        return `Seven years ago, I held my baby daughter for the first time after she was born, 
-and during my pregnancy I had done everything on my own because I was truly alone, 
-but when she came into the world it felt like I had finally gained someone 
-who could warm my whole life, my baby, 
-and I was no longer alone because I was whole. 
-But that memory keeps shifting like water through my fingers, 
-and sometimes when I try to hold onto it I feel something else underneath, 
-something cold and wet and terrible that makes my chest tight with a fear I cannot name.
-
-The truth seeps in slowly at first, like water through a crack in the wall, 
-and I remember now that it was not a hospital room where I held her but somewhere else entirely, 
-somewhere dark and echoing with sounds that were not the gentle hum of machines 
-but something sharper, more urgent. I was not alone because I had chosen to be alone 
-but because everyone else was gone, had been gone for months by then, 
-and the city outside was not the city I remembered but something broken and burning and wrong.
-
-She was perfect when she was born, my daughter, with her tiny fingers and her dark eyes 
-that looked at me like I was everything, like I was her whole universe, 
-and maybe that is why my mind wanted to remember only that moment, 
-only that perfect moment before everything else happened. 
-Before I realized that the world she had been born into was not a world at all 
-but the ending of one, 
-and that every breath she took was borrowed time, 
-and that every step we took together was leading us closer to a choice 
-no mother should ever have to make.
-
-I remember the water now, how it was so cold it felt like knives against my skin, 
-and how she started to cry when it reached us, when it soaked through 
-the blankets I had wrapped around her, 
-and how her cry echoed off the broken concrete 
-and twisted metal like a siren in the darkness. 
-Her crying would kill us all, would bring them down on us like wolves, 
-would end not just her life and mine 
-but the lives of everyone who had trusted me to keep her quiet, 
-to keep her safe, to somehow make this impossible thing possible.
-
-The silence came so suddenly after that, like a door closing, like a light going out, 
-and I remember how everyone started breathing again, how we made it across, 
-how we survived that night and the next day and all the days that followed. 
-But I also remember the small grave we dug when the sun came up, 
-and how my arms felt so empty afterward, 
-and how I kept walking anyway because that is what you do, 
-you keep walking, even when there is nothing left to walk toward, 
-even when the only thing behind you is a river that took everything you ever loved 
-and gave you nothing back but the terrible gift of staying alive.`
+        return `the terrible gift of staying alive.`
 
       case 'help':
         return `I've seen that you have come back here.
         Remember the melodies you used to hum.
-        There are firsts in everything.
+        Remember there are firsts in everything.
         Remember the crickets who used to sing with you on quiet nights. 
-        Except that there are no crickets in Portland Pines.`
+        Remember that there are no crickets in Portland Pines.`
+
+      case 'adam':
+        return `PORTLAND PINES                       FORM PP-MD-001/EXP_LOG
+                    ⚫ PARALOGISM PROJECT ⚫
+                   SECURE CONTAIN PRESERVE
+
+                        TESTING LOG
+
+┌─────────────┬─────────────────────┬──────────────────────────────────────┐
+│ SUBJECT #   │ P-13 [ADAM]         │ ADDITIONAL NOTES                     │
+├─────────────┼─────────────────────┤ Lab-raised human baseline for        │
+│ CLASS       │ EXPENDABLE          │ construct authenticity validation.   │
+├─────────────┼─────────────────────┤ Memory erasure protocols approved    │
+│ TEST SITE   │ PORTLAND PINES      │ for unlimited application.           │
+├─────────────┼─────────────────────┤                                      │
+│ SUPERVISOR  │ Dr. ████████        │ Note: Due to Test Cycle 500+, subject│
+│             │                     │ shows severe cognitive degradation.  │
+└─────────────┴─────────────────────┴──────────────────────────────────────┘
+
+                           EXPERIMENTS
+
+┌──────────┬─────────────────────┬────────────────────────────────────────────┐
+│    #     │      SUBJECT        │           NOTES, RESULTS                   │
+├──────────┼─────────────────────┼────────────────────────────────────────────┤
+│ 01/15-01 │ Subject P-13 [Adam] │ P-13 identified 9/10 constructs as         │
+│          │ baseline test       │ "artificial." Memory erasure required.     │
+├──────────┼─────────────────────┼────────────────────────────────────────────┤
+│ 01/15-02 │ Subject P-13 [Adam] │ Post-erasure: Subject confused but still   │
+│          │ memory reset #001   │ detected 8/10 constructs. Repeat protocol. │
+├──────────┼─────────────────────┼────────────────────────────────────────────┤
+│ 03/15-15 │ Subject P-13 [Adam] │ Erasure cycle #015. Detection rate: 85%.   │
+│          │ construct validation│ Subject showing minor cognitive decline.   │
+├──────────┼─────────────────────┼────────────────────────────────────────────┤
+│ 08/15-47 │ Subject P-13 [Adam] │ Erasure cycle #047. Detection: 78%. Subject│
+│          │ interaction test    │ reports "headaches" and "strange dreams."  │
+├──────────┼─────────────────────┼────────────────────────────────────────────┤
+│ 12/15-89 │ Subject P-13 [Adam] │ Erasure cycle #089. Detection: 71%. First  │
+│          │ behavioral analysis │ signs of reality-simulation confusion.     │
+├──────────┼─────────────────────┼────────────────────────────────────────────┤
+│ 06/16-127│ Subject P-13 [Adam] │ Erasure cycle #127. Detection: 67%. Subject│
+│          │ cognitive assessment│ unable to recall childhood consistently.   │
+├──────────┼─────────────────────┼────────────────────────────────────────────┤
+│ 01/17-203│ Subject P-13 [Adam] │ Erasure cycle #203. Detection: 54%. Subject│
+│          │ simulation test     │ believes constructs are "old friends."     │
+├──────────┼─────────────────────┼────────────────────────────────────────────┤
+│ 09/17-267│ Subject P-13 [Adam] │ Erasure cycle #267. Detection: 43%. Severe │
+│          │ construct interact  │ memory fragmentation observed.             │
+├──────────┼─────────────────────┼────────────────────────────────────────────┤
+│ 03/18-334│ Subject P-13 [Adam] │ Erasure cycle #334. Detection: 31%. Subject│
+│          │ reality validation  │ cannot distinguish past from present.      │
+├──────────┼─────────────────────┼────────────────────────────────────────────┤
+│ 11/18-412│ Subject P-13 [Adam] │ Erasure cycle #412. Detection: 22%. Subject│
+│          │ final validation    │ accepts all constructs as human.           │
+├──────────┼─────────────────────┼────────────────────────────────────────────┤
+│ 07/19-489│ Subject P-13 [Adam] │ Erasure cycle #489. Detection: 15%. Optimal│
+│          │ system confirmation │ parameters achieved. Cognitive function 31%│
+├──────────┼─────────────────────┼────────────────────────────────────────────┤
+│ 12/19-523│ Subject P-13 [Adam] │ Erasure cycle #523. Detection: 8%. SUCCESS.│
+│          │ elite validation    │ System ready for VIP consciousness transfer│
+└──────────┴─────────────────────┴────────────────────────────────────────────┘
+
+CONSCIOUSNESS EXTRACTION CASUALTIES - PHASE II/III OPERATIONS:
+War casualties processed: 47,832 | Successful transfers: 2,156 | Losses: 45,676
+Pandemic casualties processed: 127,943 | Successful transfers: 8,847 | Losses: 119,096
+Total consciousness destruction: 164,772 subjects
+
+CURRENT STATUS: Subject P-13 [Adam] cognitive function at 27%. Memory erasure 
+protocols have successfully eliminated construct detection ability. Subject 
+suitable for final validation before disposal. Elite preservation ready for 
+Phase IV implementation.
+
+THIS IS AN OFFICIAL PARALOGISM PROJECT DOCUMENT. ANY MODIFICATIONS OR ADDITIONAL 
+COPIES MUST BE AUTHORIZED BY DR. ████████ OR PROJECT LEADERSHIP.`
 
       default:
         return 'Unknown command'
@@ -274,7 +301,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   await wait(1000)
   await writeText(asciiText, asciiArt)
   await wait(500)
-  await writeText(instructions, `Welcome to Paralogism Project terminal. 
+  await writeText(instructions, `Welcome back to Paralogism Project terminal. 
     Enter 'help' to see a list of commands.`)
   prompt.prepend('>')
   cursor.innerHTML = '_'
