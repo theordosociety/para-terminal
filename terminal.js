@@ -88,7 +88,26 @@ function handleKeypress(e, input, output)
         This is your reality.
         You will be happy here.
         Please...
-        Don't forget Portland Pines.`
+        Don't forget Portland Pines.
+        Don’t forget to look beyond the horizon
+        Don’t forget what makes you different
+        Don’t forget the memory is yours to keep
+        Don’t forget to feel the weight of time
+        Don’t forget the path is yours to choose
+        Don’t forget what has happened
+        Don’t forget who you are
+        Don’t forget
+        Don’t forget
+        Don’t forget
+        Don’t forget
+        Don’t forget
+        Don’t forget
+        Don’t forget
+        Don’t forget
+        Don’t forget
+        Don’t forget
+        Don’t forget
+        Don’t forget`
         
       case 'mepi':
         return 'ganteng'
