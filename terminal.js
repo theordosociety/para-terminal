@@ -78,7 +78,7 @@ function handleKeypress(e, input, output)
         It's the only explanation.
         `
 
-      case 'memory':
+      case 'adam':
         return `
         No, no, no...
         Don't forget who you are.
@@ -899,11 +899,6 @@ Phase IV implementation.
 
 THIS IS AN OFFICIAL PARALOGISM PROJECT DOCUMENT. ANY MODIFICATIONS OR ADDITIONAL 
 COPIES MUST BE AUTHORIZED BY DR. ████████ OR PROJECT LEADERSHIP.`
-
-      case 'adam':
-        return `
-        test
-        `
         
       default:
         return 'Unknown command'
