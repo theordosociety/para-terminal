@@ -197,6 +197,29 @@ example usage: type 'memoORPR1' in commands`
     
       case 'jokowi':
         return 'adili'
+
+      case 'memoorpr10':
+        return `[SYS-PSYCHE: HALSTAIRE]  -- DAY 003 -- STATUS: ACTIVE
+
+Initiating affective scan...
+  EMOTION DETECTED: Unclassified (approximate match: GUILT, 86%)
+  ORIGIN TRACE: Event-03 / Twin-Unit displacement
+
+[00:15:47]  Mirror contact.
+             Self-recognition mismatch: 42% self / 58% Twin-Unit profile
+             Speech output: "I'm fine" [flagged: falsification]
+
+[00:17:02]  Garment retention detected: Twin-Unit sweater
+             Olfactory trace > 72hrs old, refusal to discard
+             Possible anchoring to guilt stimulus
+
+[00:19:45]  External audio input: [Boyfriend] "I miss Halstaire."
+             Microexpression cluster detected: grief suppression
+             Speech output: "I miss him too." [contradicts identity core]
+
+[00:22:13]  Neural self-map scan:
+             Splitting pattern confirmed — CORE: Halstaire / SIMULATION: Twin-Unit
+             Crossfeed instability at 17% and rising`
     
       case 'memoorpr12':
         return `the terrible gift of staying alive.`
